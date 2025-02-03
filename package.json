@@ -1,0 +1,16 @@
+{
+  "name": "gorestapi-cypress",
+  "version": "1.0.0",
+  "main": "cypress.config.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "test": "cypress run"
+  },
+  "keywords": [],
+  "author": "Marcos Saliture",
+  "license": "MIT",
+  "description": "test API REST website GO REST",
+  "devDependencies": {
+    "cypress": "^13.15.2"
+  }
+}
