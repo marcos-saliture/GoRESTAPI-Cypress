@@ -6,6 +6,13 @@ let selectedName
 let selectedEmail
 let selectedGender
 
+let userName
+let postId
+let selectedPostId
+let selectedUserId
+let selectedTitle
+let selectedBody
+
 module.exports = defineConfig({
   e2e: {
     setupNodeEvents(on, config) {
@@ -46,6 +53,48 @@ module.exports = defineConfig({
         },
         getSelectedGender(){
           return selectedGender
+        },
+        setPostId(id){
+          postId = id
+          return null
+        },
+        getPostId(){
+          return postId
+        },
+        setSelectedPostId(id){
+          selectedPostId = id
+          return null
+        },
+        getSelectedPostId(){
+          return selectedPostId
+        },
+        setselectedUserId(userId){
+          selectedUserId = userId
+          return null
+        },
+        getselectedUserId(){
+          return selectedUserId
+        },
+        setselectedTitle(title){
+          selectedTitle = title
+          return null
+        },
+        getselectedTitle(){
+          return selectedTitle
+        },
+        setselectedBody(text){
+          selectedBody = text
+          return null
+        },
+        getselectedBody(){
+          return selectedBody
+        },
+        setUserName(user){
+          userName = user
+          return null
+        },
+        getUserName(){
+          return userName
         }
 
       })
